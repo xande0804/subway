@@ -122,9 +122,9 @@ main{
     position: relative;
     overflow: hidden;
     width: 100%;
-}
+  } 
 
-.carrossel {
+  .carrossel {
     position: relative;
     height: 700px; 
   }
@@ -190,7 +190,7 @@ main{
     transition: 0.1s ease;
   }
   
-.bolinha.ativa {
+  .bolinha.ativa {
     background-color: #F3B60D;
 }
 
@@ -206,7 +206,7 @@ main{
     height: 540px;
     margin: 40px auto 0;
     overflow: visible;
-  }
+}
   
 .fundoVerde {
     position: absolute;
@@ -743,7 +743,7 @@ textarea.input{
     padding: 10px 0; /* Opcional: espaço interno */
 }
 
-  .itemMenu {
+.itemMenu {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -753,31 +753,31 @@ textarea.input{
     cursor: pointer;
     min-width: 149.75px;
     max-width: 149.75px;
-  }
+}
 
-  .itemMenu:hover {
+.itemMenu:hover {
     color: green;
-  }
+}
 
-  .itemMenu img {
+.itemMenu img {
     width: 40px;
     height: 40px;
     filter: grayscale(100%) brightness(0.75); /* cinza */
     transition: filter 0.3s;
-  }
+}
 
-  .itemMenu:hover img {
+.itemMenu:hover img {
     filter: none; /* cor original */
-  }
+}
 
-  .itemMenu span {
+.itemMenu span {
     margin-top: .75rem;
     font-size: 14px;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     font-weight: 600;
-  }
+}
 
-  .pagina {
+.pagina {
     display: grid;
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 20px;
@@ -786,18 +786,18 @@ textarea.input{
     margin-top: 6rem;
     margin-left: auto;
     margin-right: auto;
-  }
+}
   
-  .menuLateral {
+.menuLateral {
     grid-column: span 2;
     max-width: 14rem;
-  }
+}
   
-  .menuLateral ol {
+.menuLateral ol {
     list-style: none;
-  }
+}
   
-  .menuLateral li {
+.menuLateral li {
     background-color: #ddd;
     margin-bottom: 10px;
     padding-top: .25rem;
@@ -810,35 +810,35 @@ textarea.input{
     display: flex;            /* coloca o texto e a seta na mesma linha */
     align-items: center;      /* alinha verticalmente */
     justify-content: space-between;
-  }
+}
   
-  .menuLateral li.active {
+.menuLateral li.active {
     background-color: rgb(0 137 56);
     color: white;
     font-weight: 700;
-  }
+}
   
-  .produtosMenu {
+.produtosMenu {
     grid-column: span 10;
     margin-left: 30px;
-  }
+}
   
-  .produtosMenu h1 {
+.produtosMenu h1 {
     font-size: 2em;
     margin-bottom: 20px;
     color: rgb(0 137 56);
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-  }
+}
   
-  .cards {
+.cards {
     display: grid;
     grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
     gap: 15px;
     margin-bottom: 2.75rem;
     cursor: pointer;
-  }
+}
   
-  .card {
+.card {
     position: relative; /* ESSENCIAL para posicionar .lupa */
     background-color: white;
     border-radius: 32px;
@@ -878,25 +878,22 @@ textarea.input{
     filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
 }
 
-
-  
-  .card img {
+.card img {
     max-height: 304px;
     border-radius: 8px;
     border-radius: 32px;    
-
-  }
+}
   
-  .card p {
+.card p {
     margin-top: 10px;
     font-weight: bold;
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     text-align: left;
     font-size: 1.2rem;
     padding: 10px;
-  } 
+} 
 
-  .setas {
+.setas {
     justify-content: space-between;
     display: flex;           
     align-items: center; 
@@ -910,7 +907,4 @@ textarea.input{
 .setas h1 {
     margin: 0;
     font-size: 3rem;
-  }
-
-  
-  
+}   
