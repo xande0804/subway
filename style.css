@@ -13,7 +13,8 @@ header{
     position: fixed;
     width: 100%;
     background-color: white;
-    z-index: 10;
+    z-index: 100;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
 }
 
 .barra-verde{ /*Criando uma barra verde no topo*/
@@ -61,20 +62,7 @@ header{
     cursor: pointer; 
 }
 
-.nav-aaaaa{
-    color: rgb(0 73 30);
-    font-weight: 800;
-}
 
-.nav-aaaa{
-    color: rgb(0 73 30);
-    font-weight: 800;
-}
-
-.nav-aaa{
-    color: rgb(0 73 30);
-    font-weight: 800;
-}
 
 .nav-aa{
     color: rgb(0 73 30);
@@ -99,6 +87,29 @@ header{
 }
 
 .nav-a:hover span::after {
+    width: 100%;
+}
+
+/* Barra verde para item ativo */
+.nav-a.active {
+    position: relative;
+    z-index: 10;
+}
+
+.nav-a.active::before {
+    content: "";
+    position: absolute;
+    top: 0.3rem;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 50px;
+    height: 6px;
+    background-color: rgb(0 137 56);
+    border-radius: 0 0 6px 6px;
+}
+
+/* Manter o hover effect mesmo no item ativo */
+.nav-a.active:hover span::after {
     width: 100%;
 }
 
@@ -720,12 +731,17 @@ textarea.input{
     font-weight: 600;
 }
 
-.menuCardapio {
+.menuCardapio { 
     display: flex;
     justify-content: center;
     gap: 40px; /* espaço entre os ícones */
     margin-top: 50px;
-  }
+    position: sticky;
+    top: 95px; /* Ajuste conforme a altura do seu header */
+    background: white; /* ou outra cor, pra não ficar transparente */
+    z-index: 95; /* Garante que fique acima de outros elementos */
+    padding: 10px 0; /* Opcional: espaço interno */
+}
 
   .itemMenu {
     display: flex;
@@ -766,10 +782,15 @@ textarea.input{
     grid-template-columns: repeat(12, minmax(0, 1fr));
     gap: 20px;
     padding: 20px;
+    max-width: 1288px;
+    margin-top: 6rem;
+    margin-left: auto;
+    margin-right: auto;
   }
   
   .menuLateral {
     grid-column: span 2;
+    max-width: 14rem;
   }
   
   .menuLateral ol {
@@ -779,47 +800,117 @@ textarea.input{
   .menuLateral li {
     background-color: #ddd;
     margin-bottom: 10px;
-    padding: 10px;
+    padding-top: .25rem;
+    padding-bottom: .25rem;
+    padding-left: 1rem;
+    padding-right: .5rem;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 99px;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    display: flex;            /* coloca o texto e a seta na mesma linha */
+    align-items: center;      /* alinha verticalmente */
+    justify-content: space-between;
   }
   
   .menuLateral li.active {
-    background-color: #007f00;
+    background-color: rgb(0 137 56);
     color: white;
-    font-weight: bold;
+    font-weight: 700;
   }
   
   .produtosMenu {
     grid-column: span 10;
+    margin-left: 30px;
   }
   
   .produtosMenu h1 {
     font-size: 2em;
     margin-bottom: 20px;
-    color: #007f00;
+    color: rgb(0 137 56);
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
   }
   
   .cards {
     display: grid;
-  grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
-  gap: 20px;
+    grid-template-columns: repeat(3, 1fr); /* 3 colunas fixas */
+    gap: 15px;
+    margin-bottom: 2.75rem;
+    cursor: pointer;
   }
   
   .card {
-    background: white;
-    border-radius: 10px;
-    box-shadow: 0 0 5px rgba(0,0,0,0.1);
+    position: relative; /* ESSENCIAL para posicionar .lupa */
+    background-color: white;
+    border-radius: 32px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
     text-align: center;
     padding: 10px;
-  }
+    max-width: 18rem;
+    border: 1px solid rgb(226 226 226 / var(--tw-border-opacity, 1));
+    display: flex;
+    flex-direction: column;
+    transition:background-color 0.1s ease;
+}
+
+.card:hover {
+    background-color: rgb(0 137 56);
+}
+
+.card .lupa {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 64px;
+    height: 64px;
+    opacity: 0;
+    transition: opacity 0.1s ease;
+    pointer-events: none; /* impede que a lupa bloqueie cliques no card */
+}
+
+.card:hover .lupa {
+    opacity: 1;
+}
+
+
+.card .lupa svg {
+    cursor: pointer;
+    filter: drop-shadow(0 2px 4px rgba(0,0,0,0.4));
+}
+
+
   
   .card img {
-    max-width: 100%;
+    max-height: 304px;
     border-radius: 8px;
+    border-radius: 32px;    
+
   }
   
   .card p {
     margin-top: 10px;
     font-weight: bold;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    text-align: left;
+    font-size: 1.2rem;
+    padding: 10px;
   } 
+
+  .setas {
+    justify-content: space-between;
+    display: flex;           
+    align-items: center; 
+    gap: 10px;
+    margin-bottom: 2.75rem;
+    width: 100%;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.setas h1 {
+    margin: 0;
+    font-size: 3rem;
+  }
+
+  
+  

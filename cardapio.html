@@ -1,183 +1,594 @@
-<!DOCTYPE html>
-<html lang="pt-br">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Inicio | Subway® Brasil</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="shortcut icon" href="imagens/favicon/logo.ico" type="image/x-icon">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Cardápio | Subway® Brasil</title>
+        <link rel="stylesheet" href="style.css">
+        <link rel="shortcut icon" href="imagens/favicon/logo.ico" type="image/x-icon">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
 
-</head>
-<body>
-    <header>
-        <div class="barra-verde"></div>
-        <div class="menu">
-            <a href="index.html" rel="prev"><img src="imagens/logo/logo.svg" alt="Logo do site" class="logo"></a>
-            <nav class="nav"> 
-                <a href="cardapio.html" class="nav-a"><span>CARDÁPIO</span></a>
-                <a href="restaurante.html" class="nav-a"><span>RESTAURANTE</span></a>
-                <a href="institucional.html" class="nav-a"><span>INSTITUCIONAL</span></a>
-                <a href="faleConosco.html" class="nav-a"><span>FALE CONOSCO</span></a>
-            </nav>
-        </div>
-        </div>
-    </header>
-    <main>
-        <div class="carrossel2 carrossel4">
-            <img src="imagens/carrossel3/imagem1.png" class="ativa" alt="Imagem 1">
-            <img src="imagens/carrossel3/imagem2.png" alt="Imagem 2">
-
-            <button class="carrossel-botao esquerda" id="btnEsquerda2">&#10094;</button>
-            <button class="carrossel-botao direita" id="btnDireita2">&#10095;</button>
-
-            <div class="bolinhas2">
-                <div class="bolinha2 ativa"></div>
-                <div class="bolinha2"></div>
+    </head>
+    <body>
+        <header>
+            <div class="barra-verde"></div>
+            <div class="menu">
+                <a href="index.html" rel="prev"><img src="imagens/logo/logo.svg" alt="Logo do site" class="logo"></a>
+                <nav class="nav"> 
+                    <a href="cardapio.html" class="nav-a nav-aa active"><span>CARDÁPIO</span></a>
+                    <a href="restaurante.html" target="_blank" class="nav-a"><span>RESTAURANTE</span></a>
+                    <a href="institucional.html" class="nav-a"><span>INSTITUCIONAL</span></a>
+                    <a href="faleConosco.html" class="nav-a"><span>FALE CONOSCO</span></a>
+                </nav>
             </div>
-        </div>
-
-        <div class="menuCardapio">
-            <div class="itemMenu">
-                <img src="imagens/cardápio/paes.svg" alt="">
-                <span>SANDUÍCHES</span>
             </div>
+        </header>
+        <main>
+            <div class="carrossel2 carrossel4">
+                <img src="imagens/carrossel3/imagem1.png" class="ativa" alt="Imagem 1">
+                <img src="imagens/carrossel3/imagem2.png" alt="Imagem 2">
+
+                <button class="carrossel-botao esquerda" id="btnEsquerda2">&#10094;</button>
+                <button class="carrossel-botao direita" id="btnDireita2">&#10095;</button>
+
+                <div class="bolinhas2">
+                    <div class="bolinha2 ativa"></div>
+                    <div class="bolinha2"></div>
+                </div>
+            </div>
+
+            <div class="menuCardapio">
+                <div class="itemMenu">
+                    <img src="imagens/cardápio/paes.svg" alt="">
+                    <span>SANDUÍCHES</span>
+                </div>
+                
+                <div class="itemMenu">
+                    <img src="imagens/cardápio/acomp.svg" alt="">
+                    <span>ACOMPANHAMENTOS</span>
+                </div>
+                
+                <div class="itemMenu">
+                    <img src="imagens/cardápio/bebidas.svg" alt="">
+                    <span>BEBIDAS</span>
+                </div>
+                
+                <div class="itemMenu">
+                    <img src="imagens/cardápio/adicionais.svg" alt="">
+                    <span>ADICIONAIS</span>
+                </div>
+                
+                <div class="itemMenu">
+                    <img src="imagens/cardápio/paes.svg" alt="">
+                    <span>Pães</span>
+                </div>
+            </div>
+
+            <div class="pagina">
+                <nav class="menuLateral">
+                <ol>
+                    <li class="active">
+                        VER TODAS
+                        <svg width="24" height="16" viewBox="0 0 24 16" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M0 12.0725L14.3904 12.0725V16L24.0017 7.99879L14.3904 0V3.96204H0V12.0725Z" fill="white"></path>
+                        </svg>
+                    </li>
+                    <li>SANDUÍCHES</li>
+                    <li>ACOMPANHAMENTOS</li>
+                    <li>BEBIDAS</li>
+                    <li>ADICINAIS</li>
+                    <li>PÃES</li>
+                </ol>
+                </nav>
             
-            <div class="itemMenu">
-                <img src="imagens/cardápio/acomp.svg" alt="">
-                <span>ACOMPANHAMENTOS</span>
-            </div>
-            
-            <div class="itemMenu">
-                <img src="imagens/cardápio/bebidas.svg" alt="">
-                <span>BEBIDAS</span>
-            </div>
-            
-            <div class="itemMenu">
-                <img src="imagens/cardápio/adicionais.svg" alt="">
-                <span>ADICIONAIS</span>
-            </div>
-            
-            <div class="itemMenu">
-                <img src="imagens/cardápio/paes.svg" alt="">
-                <span>Pães</span>
-            </div>
-        </div>
+                <section class="produtosMenu">
+                    <div class="setas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="252" height="64" viewBox="0 0 252 64" fill="none" class="injected-svg" data-src="/images/subway-yellow-arrow-left.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <path d="M-6.92613e-07 15.8451L-2.11079e-06 48.2892C-2.11079e-06 48.2892 132.211 48.2892 151.49 48.2892L212.713 48.2892L212.713 64L251.16 31.9935L212.713 -1.6806e-06L212.713 15.8457L151.83 15.8457L-6.92613e-07 15.8451Z" fill="#FCE300"></path>
+                            </svg>
+                                    <h1>SANDUÍCHES</h1>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="253" height="64" viewBox="0 0 253 64" fill="none" class="injected-svg" data-src="/images/subway-yellow-arrow-right.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                        <path d="M253 48.1548L253 15.7106C253 15.7106 119.109 15.7108 99.8307 15.7108L38.6078 15.7108L38.6078 -1.6806e-06L0.160155 32.0065L38.6078 64L38.6078 48.1543L99.4901 48.1543L253 48.1548Z" fill="#FCE300"></path>
+                        </svg>
+                    </div>
 
-        <div class="pagina">
-            <nav class="menuLateral">
-              <ol>
-                <li class="active">Ver todas</li>
-                <li>Sanduíches</li>
-                <li>Acompanhamentos</li>
-                <li>Bebidas</li>
-                <li>Adicionais</li>
-                <li>Pães</li>
-              </ol>
-            </nav>
-          
-            <section class="produtosMenu">
-              <h1>Sanduíches</h1>
-              <div class="cards">
-                <div class="card">
-                  <img src="imagens/menu/frangoDefumado.jpg" alt="Frango Defumado">
-                  <p>Frango Defumado Cream Cheese</p>
+                <div class="cards">
+                    <div class="card">
+                        <img src="imagens/menu/1frangoDefumado.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Frango Defumado Cream Cheese</p>
+                    </div>
+            
+                    <div class="card">
+                        <img src="imagens/menu/1frango.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Frango</p>
+                    </div>
+            
+                    <div class="card">
+                        <img src="imagens/menu/3frangoTeriyaky.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Frango Teriyaki</p>
+                    </div>
+            
+                    <div class="card">
+                        <img src="imagens/menu/4empanadoDeFrango.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Empanado De Frango</p>
+                    </div>
+            
+                    <div class="card">
+                        <img src="imagens/menu/5steackChurrasco.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Steack Churrasco</p>
+                    </div>
+            
+                    <div class="card">
+                        <img src="imagens/menu/6steackCheddarCremoso.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Steack Cheddar Cremoso</p>
+                    </div>
+            
+                    <div class="card">
+                        <img src="imagens/menu/7carneSecaComCreamCheese.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Carne Seca Com Cream Cheese</p>
+                    </div>
+            
+                    <div class="card">
+                        <img src="imagens/menu/8carneSupreme.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Carne Supreme</p>
+                    </div>
+            
+                    <div class="card">
+                        <img src="imagens/menu/9bmtItaliano.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Bmt Italiano</p>
+                    </div>
+            
+                    <div class="card">
+                        <img src="imagens/menu/10presunto.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Presunto</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="imagens/menu/11vegetariano.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Vegetariano</p>
+                    </div>
+
+                    <div class="card">
+                        <img src="imagens/menu/12subVeg.jpg" alt="Frango Defumado">
+                        <div class="lupa">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                            <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                        </svg>
+                        </div>
+                        <p>Sub Veg</p>
+                    </div>
                 </div>
-                <div class="card">
-                  <img src="sua-imagem-aqui.jpg" alt="Frango">
-                  <p>Frango</p>
-                </div>
-                <div class="card">
-                  <img src="sua-imagem-aqui.jpg" alt="Frango Teriyaki">
-                  <p>Frango Teriyaki</p>
-                </div>
-                <div class="card">
-                  <img src="sua-imagem-aqui.jpg" alt="Frango Empanado">
-                  <p>Frango Empanado</p>
-                </div>
-                <div class="card">
-                  <img src="sua-imagem-aqui.jpg" alt="Hambúrguer">
-                  <p>Hambúrguer</p>
-                </div>
-                <div class="card">
-                  <img src="sua-imagem-aqui.jpg" alt="Hambúrguer Especial">
-                  <p>Hambúrguer Especial</p>
-                </div>
-              </div>
-            </section>
-          </div>
-          
+
+                    <div class="setas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="252" height="64" viewBox="0 0 252 64" fill="none" class="injected-svg" data-src="/images/subway-yellow-arrow-left.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <path d="M-6.92613e-07 15.8451L-2.11079e-06 48.2892C-2.11079e-06 48.2892 132.211 48.2892 151.49 48.2892L212.713 48.2892L212.713 64L251.16 31.9935L212.713 -1.6806e-06L212.713 15.8457L151.83 15.8457L-6.92613e-07 15.8451Z" fill="#FCE300"></path>
+                            </svg>
+                                    <h1>ACOMPANHAMENTOS</h1>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="253" height="64" viewBox="0 0 253 64" fill="none" class="injected-svg" data-src="/images/subway-yellow-arrow-right.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                        <path d="M253 48.1548L253 15.7106C253 15.7106 119.109 15.7108 99.8307 15.7108L38.6078 15.7108L38.6078 -1.6806e-06L0.160155 32.0065L38.6078 64L38.6078 48.1543L99.4901 48.1543L253 48.1548Z" fill="#FCE300"></path>
+                        </svg>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <img src="imagens/menu/a/1cookieMacadâmia.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Cookie Macadâmia</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/a/2cookiaTradicionalGotasDeChocolate.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                                </svg>
+                                </div>
+                                <p>Cookie Tradicional Gotas De Chocolate</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/a/3cookieChocolate.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                                </svg>
+                                </div>
+                            <p>Cookie Chocolate</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/a/4batataRústicaComErvasFinas.png" alt="Frango Defumado">
+                            <div class="lupa">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                    <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                    <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                                </svg>
+                            </div>
+                                <p>Batata Rústica Com Ervas Finas</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/a/5chips(DoritosERuffles).png" alt="Frango Defumado">
+                            <div class="lupa">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                    <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                    <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                                </svg>
+                            </div>
+                            <p>Chips (Doritos E Ruffles)</p>
+                        </div>
+                    </div>
+
+                    <div class="setas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="252" height="64" viewBox="0 0 252 64" fill="none" class="injected-svg" data-src="/images/subway-yellow-arrow-left.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <path d="M-6.92613e-07 15.8451L-2.11079e-06 48.2892C-2.11079e-06 48.2892 132.211 48.2892 151.49 48.2892L212.713 48.2892L212.713 64L251.16 31.9935L212.713 -1.6806e-06L212.713 15.8457L151.83 15.8457L-6.92613e-07 15.8451Z" fill="#FCE300"></path>
+                            </svg>
+                                    <h1>BEBIDAS</h1>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="253" height="64" viewBox="0 0 253 64" fill="none" class="injected-svg" data-src="/images/subway-yellow-arrow-right.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                        <path d="M253 48.1548L253 15.7106C253 15.7106 119.109 15.7108 99.8307 15.7108L38.6078 15.7108L38.6078 -1.6806e-06L0.160155 32.0065L38.6078 64L38.6078 48.1543L99.4901 48.1543L253 48.1548Z" fill="#FCE300"></path>
+                        </svg>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <img src="imagens/menu/B/1água.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>água</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/B/2refrigerante.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Refrigerante</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/B/3energético.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Energético</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/B/4chá.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Chá</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/B/5suco.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Suco</p>
+                        </div>
+                    </div>
+
+                    <div class="setas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="252" height="64" viewBox="0 0 252 64" fill="none" class="injected-svg" data-src="/images/subway-yellow-arrow-left.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <path d="M-6.92613e-07 15.8451L-2.11079e-06 48.2892C-2.11079e-06 48.2892 132.211 48.2892 151.49 48.2892L212.713 48.2892L212.713 64L251.16 31.9935L212.713 -1.6806e-06L212.713 15.8457L151.83 15.8457L-6.92613e-07 15.8451Z" fill="#FCE300"></path>
+                            </svg>
+                                    <h1>Adicionais</h1>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="253" height="64" viewBox="0 0 253 64" fill="none" class="injected-svg" data-src="/images/subway-yellow-arrow-right.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                        <path d="M253 48.1548L253 15.7106C253 15.7106 119.109 15.7108 99.8307 15.7108L38.6078 15.7108L38.6078 -1.6806e-06L0.160155 32.0065L38.6078 64L38.6078 48.1543L99.4901 48.1543L253 48.1548Z" fill="#FCE300"></path>
+                        </svg>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <img src="imagens/menu/c/1cheddarCremoso.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Cheddar Cremoso</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/c/2creamCheese.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Cream Cheese</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/c/3cheddarVegCremoso.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Cheddar Veg Cremoso</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/c/4dobroDeQueijo.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Dobro De Queijo</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/c/5bacon.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Bacon</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/c/6salame.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Salame</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/c/7pepperoni.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Pepperoni</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/c/8presunto.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Presunto</p>
+                        </div>  
+                    </div>
+
+                    <div class="setas">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="252" height="64" viewBox="0 0 252 64" fill="none" class="injected-svg" data-src="/images/subway-yellow-arrow-left.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                            <path d="M-6.92613e-07 15.8451L-2.11079e-06 48.2892C-2.11079e-06 48.2892 132.211 48.2892 151.49 48.2892L212.713 48.2892L212.713 64L251.16 31.9935L212.713 -1.6806e-06L212.713 15.8457L151.83 15.8457L-6.92613e-07 15.8451Z" fill="#FCE300"></path>
+                            </svg>
+                                    <h1>Pães</h1>
+                                    <svg xmlns="http://www.w3.org/2000/svg" width="253" height="64" viewBox="0 0 253 64" fill="none" class="injected-svg" data-src="/images/subway-yellow-arrow-right.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                        <path d="M253 48.1548L253 15.7106C253 15.7106 119.109 15.7108 99.8307 15.7108L38.6078 15.7108L38.6078 -1.6806e-06L0.160155 32.0065L38.6078 64L38.6078 48.1543L99.4901 48.1543L253 48.1548Z" fill="#FCE300"></path>
+                        </svg>
+                    </div>
+
+                    <div class="cards">
+                        <div class="card">
+                            <img src="imagens/menu/d/13queijos.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>3 Queijos</p>
+                        </div>
+
+                        <div class="card">
+                            <img src="imagens/menu/d/2parmesãoEOrégano.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Parmesão E Orégano</p>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/menu/d/39grãos.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>9 Grãos</p>
+                        </div>
+                        <div class="card">
+                            <img src="imagens/menu/d/4italianoBranco.png" alt="Frango Defumado">
+                            <div class="lupa">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="64" height="64" viewBox="0 0 64 64" fill="none" class="injected-svg" data-src="/icons/subway-search-icon.svg" xmlns:xlink="http://www.w3.org/1999/xlink" role="img">
+                                <circle cx="32" cy="32" r="32" fill="#F3B60D"></circle>
+                                <path d="M39.5098 35.51H37.9298L37.3698 34.97C39.3298 32.69 40.5098 29.73 40.5098 26.51C40.5098 19.33 34.6898 13.51 27.5098 13.51C20.3298 13.51 14.5098 19.33 14.5098 26.51C14.5098 33.69 20.3298 39.51 27.5098 39.51C30.7298 39.51 33.6898 38.33 35.9698 36.37L36.5098 36.93V38.51L46.5098 48.49L49.4898 45.51L39.5098 35.51ZM27.5098 35.51C22.5298 35.51 18.5098 31.49 18.5098 26.51C18.5098 21.53 22.5298 17.51 27.5098 17.51C32.4898 17.51 36.5098 21.53 36.5098 26.51C36.5098 31.49 32.4898 35.51 27.5098 35.51Z" fill="#231F20"></path>
+                            </svg>
+                            </div>
+                            <p>Italiano Branco</p>
+                        </div>
+                    </div>
+
+
+
+
+            
     </main>
-    <footer class="footer">
-        <img src="imagens/footer/logoFooter.svg" alt="" width="80" height="103">
+        <footer class="footer">
+            <img src="imagens/footer/logoFooter.svg" alt="" width="80" height="103">
 
-        <p class="texto"><span class="destaque">FOME?</span> VEM DE SUB</p>
+            <p class="texto"><span class="destaque">FOME?</span> VEM DE SUB</p>
 
-        <div class="link">
-            <a href="https://www.instagram.com/subwaybrasil/" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
-            
-            <a href="https://www.facebook.com/subwaybrasil" title="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
-            
-            <a href="https://x.com/subwaybrasil" title="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
-            
-            <a href="https://www.youtube.com/subwaybrasiloficial" title="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
-            
-            <a href="https://www.tiktok.com/@subway.brasil?lang=pt-BR" title="TikTok" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
-        </div>
+            <div class="link">
+                <a href="https://www.instagram.com/subwaybrasil/" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                
+                <a href="https://www.facebook.com/subwaybrasil" title="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                
+                <a href="https://x.com/subwaybrasil" title="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                
+                <a href="https://www.youtube.com/subwaybrasiloficial" title="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                
+                <a href="https://www.tiktok.com/@subway.brasil?lang=pt-BR" title="TikTok" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+            </div>
 
-        <div class="opcoes">
-            <a href="cardapio.html">CARDÁPIO</a>
-            <a href="https://subway.harmo.me/" target="_blank" rel="noopener">RESTAURANTES</a>
-            <a href="institucional.html">INSTITUCIONAL</a>
-            <a href="faleConosco.html">FALE CONOSCO</a>
-        </div>
+            <div class="opcoes">
+                <a href="cardapio.html">CARDÁPIO</a>
+                <a href="restaurante.html" target="_blank" rel="noopener">RESTAURANTES</a>
+                <a href="institucional.html">INSTITUCIONAL</a>
+                <a href="faleConosco.html">FALE CONOSCO</a>
+            </div>
 
-        <div class="opcoes2">
-            <a href="institucional.html">SOBRE O SUBWAY</a>
-            <a href="pltPriv.html">POLÍTICA DE PRIVACIDADE</a>
-            <a href="termUse.html">TERMOS DE USO</a>
-            <a href="#perguntas-frequentes">PERGUNTAS FREQUENTES</a>
-        </div>
+            <div class="opcoes2">
+                <a href="institucional.html">SOBRE O SUBWAY</a>
+                <a href="pltPriv.html">POLÍTICA DE PRIVACIDADE</a>
+                <a href="termUse.html">TERMOS DE USO</a>
+                <a href="#perguntas-frequentes">PERGUNTAS FREQUENTES</a>
+            </div>
 
-        <p class="final">SUBWAY® é uma marca registrada da Subway IP LLC TM & © 2025 Subway®. <br>Todos os direitos reservados. Imagens meramente ilustrativas.</p>
-    </footer>
-</body>
-<script>
-    const imagens2 = document.querySelectorAll('.carrossel2 img');
-    const bolinhas2 = document.querySelectorAll('.bolinha2');
-    const btnEsquerda2 = document.getElementById('btnEsquerda2');
-    const btnDireita2 = document.getElementById('btnDireita2');
-    let index2 = 0;
+            <p class="final">SUBWAY® é uma marca registrada da Subway IP LLC TM & © 2025 Subway®. <br>Todos os direitos reservados. Imagens meramente ilustrativas.</p>
+        </footer>
+    </body>
+    <script>
+        const imagens2 = document.querySelectorAll('.carrossel2 img');
+        const bolinhas2 = document.querySelectorAll('.bolinha2');
+        const btnEsquerda2 = document.getElementById('btnEsquerda2');
+        const btnDireita2 = document.getElementById('btnDireita2');
+        let index2 = 0;
 
-    function mostrarImagem2(n) {
-      imagens2.forEach((img, i) => {
-        img.classList.remove('ativa');
-        bolinhas2[i].classList.remove('ativa');
-      });
-      imagens2[n].classList.add('ativa');
-      bolinhas2[n].classList.add('ativa');
-    }
+        function mostrarImagem2(n) {
+        imagens2.forEach((img, i) => {
+            img.classList.remove('ativa');
+            bolinhas2[i].classList.remove('ativa');
+        });
+        imagens2[n].classList.add('ativa');
+        bolinhas2[n].classList.add('ativa');
+        }
 
-    function proxima2() {
-      index2 = (index2 + 1) % imagens2.length;
-      mostrarImagem2(index2);
-    }
-
-    function anterior2() {
-      index2 = (index2 - 1 + imagens2.length) % imagens2.length;
-      mostrarImagem2(index2);
-    }
-
-    btnDireita2.addEventListener('click', proxima2);
-    btnEsquerda2.addEventListener('click', anterior2);
-
-    bolinhas2.forEach((bolinha, i) => {
-      bolinha.addEventListener('click', () => {
-        index2 = i;
+        function proxima2() {
+        index2 = (index2 + 1) % imagens2.length;
         mostrarImagem2(index2);
-      });
-    });
+        }
 
-    setInterval(proxima2, 3500);
-</script>
-</html>
+        function anterior2() {
+        index2 = (index2 - 1 + imagens2.length) % imagens2.length;
+        mostrarImagem2(index2);
+        }
+
+        btnDireita2.addEventListener('click', proxima2);
+        btnEsquerda2.addEventListener('click', anterior2);
+
+        bolinhas2.forEach((bolinha, i) => {
+        bolinha.addEventListener('click', () => {
+            index2 = i;
+            mostrarImagem2(index2);
+        });
+        });
+
+        setInterval(proxima2, 3500);
+    </script>
+    </html>
