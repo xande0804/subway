@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inicio | Subway® Brasil</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="imagens/favicon/logo.ico" type="image/x-icon">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+</head>
+<body>
+    <header>
+        <div class="barra-verde"></div>
+        <div class="menu">
+            <a href="index.html" rel="prev"><img src="imagens/logo/logo.svg" alt="Logo do site" class="logo"></a>
+            <nav class="nav"> 
+                <a href="cardapio.html" class="nav-a"><span>CARDÁPIO</span></a>
+                <a href="https://subway.harmo.me/" target="_blank" rel="noopener" class="nav-a"><span>RESTAURANTE</span></a>
+                <a href="institucional.html" class="nav-a"><span>INSTITUCIONAL</span></a>
+                <a href="faleConosco.html" class="nav-a"><span>FALE CONOSCO</span></a>
+            </nav>
+        </div>
+        </div>
+    </header>
+    <main> 
+        <div class="carrosselSuper">
+            <div class="carrossel">
+                <a href="https://sbw-cms.zamp.com.br//lojas_participantes_subway_series_5d742c2bdf/lojas_participantes_subway_series_5d742c2bdf.pdf" target="_blank" rel="noopener"><img src="imagens/carrossel/imgCarrossel1.jpg" class="ativa" alt="Imagem 1"></a>
+
+                <a href="https://sbw-cms.zamp.com.br//2por2490_Lista_Restaurantes_Participantes_15_04_4_78d3f24fb4/2por2490_Lista_Restaurantes_Participantes_15_04_4_78d3f24fb4.pdf" target="_blank" rel="noopener"><img src="imagens/carrossel/imgCarrossel2.jpg" alt="Imagem 2"></a>
+
+                <a href="https://sbw-cms.zamp.com.br//2por2490_Lista_Restaurantes_Participantes_15_04_4_78d3f24fb4/2por2490_Lista_Restaurantes_Participantes_15_04_4_78d3f24fb4.pdf" target="_blank" rel="noopener"><img src="imagens/carrossel/imgCarrossel3.jpg" alt="Imagem 3"></a>
+            
+                <button class="carrossel-botao esquerda">&#10094;</button>
+                <button class="carrossel-botao direita">&#10095;</button>
+            
+                <div class="bolinhas">
+                  <div class="bolinha ativa"></div>
+                  <div class="bolinha"></div>
+                  <div class="bolinha"></div>
+                </div>
+              </div>
+        </div>
+        <img src="imagens/mouse.svg" alt="imagem de mouse" class="mouse"> 
+
+        <div class="container-fundoVerde">
+            
+            <img src="imagens/delivery/mao.png" alt="Mão" class="mao" width="1000" height="562.500">
+            <img src="imagens/delivery/fundoVerde.jpg" alt="Fundo Verde" class="fundoVerde">
+          
+            <div class="lado-direito">
+                <img src="imagens/delivery/tudo.png" alt="">
+            </div>
+        </div>
+
+        <div class="carrossel2">
+            <img src="imagens/carrossel2/imagem1.png" class="ativa" alt="Imagem 1">
+            <img src="imagens/carrossel2/imagem2.png" alt="Imagem 2">
+
+            <button class="carrossel-botao esquerda" id="btnEsquerda2">&#10094;</button>
+            <button class="carrossel-botao direita" id="btnDireita2">&#10095;</button>
+
+            <div class="bolinhas2">
+                <div class="bolinha2 ativa"></div>
+                <div class="bolinha2"></div>
+            </div>
+        </div>
+    </main>  
+        <footer class="footer">
+            <img src="imagens/footer/logoFooter.svg" alt="" width="80" height="103">
+
+            <p class="texto"><span class="destaque">FOME?</span> VEM DE SUB</p>
+
+            <div class="link">
+                <a href="https://www.instagram.com/subwaybrasil/" title="Instagram" target="_blank" rel="noopener"><i class="fab fa-instagram"></i></a>
+                
+                <a href="https://www.facebook.com/subwaybrasil" title="Facebook" target="_blank" rel="noopener"><i class="fab fa-facebook"></i></a>
+                
+                <a href="https://x.com/subwaybrasil" title="Twitter" target="_blank" rel="noopener"><i class="fab fa-twitter"></i></a>
+                
+                <a href="https://www.youtube.com/subwaybrasiloficial" title="YouTube" target="_blank" rel="noopener"><i class="fab fa-youtube"></i></a>
+                
+                <a href="https://www.tiktok.com/@subway.brasil?lang=pt-BR" title="TikTok" target="_blank" rel="noopener"><i class="fab fa-tiktok"></i></a>
+            </div>
+
+            <div class="opcoes">
+                <a href="cardapio.html">CARDÁPIO</a>
+                <a href="https://subway.harmo.me/" target="_blank" rel="noopener">RESTAURANTES</a>
+                <a href="institucional.html">INSTITUCIONAL</a>
+                <a href="faleConosco.html">FALE CONOSCO</a>
+            </div>
+
+            <div class="opcoes2">
+                <a href="institucional.html">SOBRE O SUBWAY</a>
+                <a href="">POLÍTICA DE PRIVACIDADE</a>
+                <a href="">TERMOS DE USO</a>
+                <a href="faleConosco.html#perguntas-frequentes">PERGUNTAS FREQUENTES</a>
+            </div>
+
+            <p class="final">SUBWAY® é uma marca registrada da Subway IP LLC TM & © 2025 Subway®. <br>Todos os direitos reservados. Imagens meramente ilustrativas.</p>
+        </footer>
+</body>
+<script>
+    const imagens = document.querySelectorAll('.carrossel img');
+    const bolinhas = document.querySelectorAll('.bolinha');
+    const btnEsquerda = document.querySelector('.carrossel-botao.esquerda');
+    const btnDireita = document.querySelector('.carrossel-botao.direita');
+    let index = 0;
+  
+    function mostrarImagem(n) {
+      imagens.forEach((img, i) => {
+        img.classList.remove('ativa');
+        bolinhas[i].classList.remove('ativa');
+      });
+      imagens[n].classList.add('ativa');
+      bolinhas[n].classList.add('ativa');
+    }
+  
+    function proxima() {
+      index = (index + 1) % imagens.length;
+      mostrarImagem(index);
+    }
+  
+    function anterior() {
+      index = (index - 1 + imagens.length) % imagens.length;
+      mostrarImagem(index);
+    }
+  
+    btnDireita.addEventListener('click', proxima);
+    btnEsquerda.addEventListener('click', anterior);
+    bolinhas.forEach((b, i) => b.addEventListener('click', () => {
+      index = i;
+      mostrarImagem(index);
+    }));
+  
+    setInterval(proxima, 3500);
+
+    const imagens2 = document.querySelectorAll('.carrossel2 img');
+    const bolinhas2 = document.querySelectorAll('.bolinha2');
+    const btnEsquerda2 = document.getElementById('btnEsquerda2');
+    const btnDireita2 = document.getElementById('btnDireita2');
+
+    let index2 = 0;
+
+    function mostrarImagem2(n) {
+    imagens2.forEach((img, i) => {
+        img.classList.remove('ativa');
+        bolinhas2[i].classList.remove('ativa');
+    });
+    imagens2[n].classList.add('ativa');
+    bolinhas2[n].classList.add('ativa');
+    }
+
+    function proxima2() {
+    index2 = (index2 + 1) % imagens2.length;
+    mostrarImagem2(index2);
+    }
+
+    function anterior2() {
+    index2 = (index2 - 1 + imagens2.length) % imagens2.length;
+    mostrarImagem2(index2);
+    }
+
+    btnDireita2.addEventListener('click', proxima2);
+    btnEsquerda2.addEventListener('click', anterior2);
+
+    bolinhas2.forEach((bolinha, i) => {
+    bolinha.addEventListener('click', () => {
+        index2 = i;
+        mostrarImagem2(index2);
+    });
+    });
+
+    // auto slide, se quiser, ajusta o tempo aqui (opcional)
+    setInterval(proxima2, 3500);
+
+  </script>
+</html>
