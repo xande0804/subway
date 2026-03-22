@@ -1,6 +1,4 @@
 
----
-README — Subway Clone
 
 # Subway Clone
 
